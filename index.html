@@ -27,22 +27,22 @@
         <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-puzzle" aria-label="Explore the portfolio">
-        <a class="puzzle-piece puzzle-piece-top-left" href="#about" aria-label="Go to About me">
+        <a class="puzzle-piece puzzle-piece-top-left" data-piece="about" data-target="#about" href="#about" aria-label="Go to About me">
           <img src="hero-puzzle-assets/puzzle_piece-top left v2.png" alt="">
         </a>
-        <a class="puzzle-piece puzzle-piece-top-right" href="#lessons" aria-label="Go to Lessons">
+        <a class="puzzle-piece puzzle-piece-top-right" data-piece="lessons" data-target="#lessons" href="#lessons" aria-label="Go to Lessons">
           <img src="hero-puzzle-assets/puzzle_piece-top right v2.png" alt="">
         </a>
-        <a class="puzzle-piece puzzle-piece-middle-left" href="#projects" aria-label="Go to Projects">
+        <a class="puzzle-piece puzzle-piece-middle-left" data-piece="projects" data-target="#projects" href="#projects" aria-label="Go to Projects">
           <img src="hero-puzzle-assets/puzzle_piece-middle left v2.png" alt="">
         </a>
-        <a class="puzzle-piece puzzle-piece-middle-right" href="#footer" aria-label="Go to Contact">
+        <a class="puzzle-piece puzzle-piece-middle-right" data-piece="contact" data-target="#footer" href="#footer" aria-label="Go to Contact">
           <img src="hero-puzzle-assets/puzzle_piece-middle right v2.png" alt="">
         </a>
-        <a class="puzzle-piece puzzle-piece-bottom-left" href="#top" aria-label="Go to Skills">
+        <a class="puzzle-piece puzzle-piece-bottom-left" data-piece="skills" data-target="#skills" href="#skills" aria-label="Go to Skills">
           <img src="hero-puzzle-assets/puzzle_piece-bottom left v2.png" alt="">
         </a>
-        <a class="puzzle-piece puzzle-piece-bottom-right" href="#reflection" aria-label="Go to Reflection">
+        <a class="puzzle-piece puzzle-piece-bottom-right" data-piece="reflection" data-target="#reflection" href="#reflection" aria-label="Go to Reflection">
           <img src="hero-puzzle-assets/puzzle_piece-bottom right v2.png" alt="">
         </a>
       </div>
@@ -101,6 +101,22 @@
           <article class="project-card project-card-light"><span class="project-label">Project 01</span><h3>Project title</h3><p>HTML · CSS</p><span class="project-icon" aria-hidden="true">↗</span></article>
           <article class="project-card project-card-dark"><span class="project-label">Project 02</span><h3>Project title</h3><p>HTML · CSS</p><span class="project-icon" aria-hidden="true">↗</span></article>
           <article class="project-card project-card-accent"><span class="project-label">Project 03</span><h3>Project title</h3><p>Web design</p><span class="project-icon" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section: this structure can later be rendered from a React data list. -->
+    <section class="skills page-section section-line" id="skills" aria-labelledby="skills-title">
+      <p class="section-number">04 / Skills</p>
+      <div class="section-content">
+        <div class="skills-heading">
+          <h2 id="skills-title">Tools I’m<br><em>learning.</em></h2>
+          <p>The skills I’m practicing as I turn ideas into working pages.</p>
+        </div>
+        <div class="skill-list">
+          <article class="skill-item"><span class="skill-number">01</span><div><h3>HTML</h3><p>Building clear page structure.</p></div></article>
+          <article class="skill-item"><span class="skill-number">02</span><div><h3>CSS</h3><p>Creating thoughtful visual systems.</p></div></article>
+          <article class="skill-item"><span class="skill-number">03</span><div><h3>JavaScript</h3><p>Adding useful interaction.</p></div></article>
         </div>
       </div>
     </section>

@@ -1,0 +1,19 @@
+/* Skills section styles. */
+.skills .section-number { margin: 0; }
+.skills .section-content { display: flex; gap: 100px; margin-top: 65px; }
+.skills-heading { display: flex; flex: 0 0 43%; justify-content: space-between; gap: 25px; }
+.skills-heading h2 { margin: 0; font-size: clamp(46px, 6vw, 76px); }
+.skills-heading p { max-width: 145px; margin: 8px 0 0; font-size: 14px; }
+.skill-list { flex: 1; }
+.skill-item { display: flex; gap: 28px; align-items: flex-start; padding: 24px 0; border-top: 1px solid var(--sand); }
+.skill-item:last-child { border-bottom: 1px solid var(--sand); }
+.skill-number { color: var(--blue); font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .14em; }
+.skill-item h3 { margin: 0 0 5px; font-size: 27px; font-weight: normal; }
+.skill-item p { margin: 0; font-size: 14px; }
+
+@media (max-width: 720px) {
+	.skills .section-content { display: block; margin-top: 42px; }
+	.skills-heading { display: block; }
+	.skills-heading p { margin-top: 25px; }
+	.skill-list { margin-top: 35px; }
+}
