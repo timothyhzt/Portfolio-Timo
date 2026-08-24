@@ -17,8 +17,9 @@ a { color: inherit; text-decoration: none; }
 em { color: var(--blue); font-style: italic; }
 h2, blockquote { color: var(--navy); font-weight: normal; letter-spacing: -.055em; line-height: .96; }
 
-.site-header, .page-section, .site-footer { max-width: var(--max-width); margin: 0 auto; padding-left: 40px; padding-right: 40px; }
-.page-section { padding-top: 54px; padding-bottom: 110px; }
+.site-header { max-width: var(--max-width); margin: 0 auto; padding-left: 40px; padding-right: 40px; }
+.site-footer { width: 100vw; max-width: none; margin: 0; padding-left: 40px; padding-right: 40px; }
+.page-section { width: 100vw; margin: 0; padding: 54px 40px 110px; }
 .section-line { border-top: 1px solid var(--sand); }
 .eyebrow, .section-number, .project-label { color: var(--blue); font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .14em; text-transform: uppercase; }
 .button { display: inline-flex; gap: 28px; align-items: center; padding: 15px 19px; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; }
