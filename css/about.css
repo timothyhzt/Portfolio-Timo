@@ -1,0 +1,13 @@
+/* About section styles. */
+.about .section-number { margin: 0; }
+.about .section-content { display: flex; gap: 100px; margin-top: 65px; }
+.about h2 { margin: 0; flex: 0 0 43%; font-size: clamp(46px, 6vw, 76px); }
+.section-copy { max-width: 420px; padding-top: 8px; }
+.section-copy p { margin-top: 0; }
+.section-copy .lead { margin-bottom: 22px; font-size: 21px; line-height: 1.35; }
+.text-link { display: inline-block; margin-top: 24px; border-bottom: 1px solid var(--navy); padding-bottom: 5px; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; }
+
+@media (max-width: 720px) {
+	.about .section-content { display: block; margin-top: 42px; }
+	.section-copy { margin-top: 35px; }
+}

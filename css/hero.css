@@ -1,0 +1,13 @@
+/* Hero introduction styles. */
+.hero { min-height: 650px; display: flex; align-items: center; justify-content: space-between; padding-top: 72px; padding-bottom: 100px; }
+.hero-content { max-width: 700px; }
+.hero h1 { margin: 24px 0 30px; color: var(--navy); font-size: clamp(58px, 8vw, 104px); font-weight: normal; letter-spacing: -.055em; line-height: .96; }
+.hero-text { max-width: 390px; margin-bottom: 32px; font-size: 17px; }
+.hero-image { width: 38%; }
+.hero-image img { display: block; width: 100%; height: auto; }
+
+@media (max-width: 720px) {
+	.hero { min-height: 570px; padding-top: 55px; padding-bottom: 75px; }
+	.hero h1 { font-size: 61px; }
+	.hero-image { width: 42%; }
+}

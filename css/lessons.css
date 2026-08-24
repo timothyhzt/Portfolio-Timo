@@ -1,0 +1,15 @@
+/* Lessons list styles. */
+.lessons .section-number { margin: 0; }
+.lessons .section-content { display: flex; gap: 100px; margin-top: 65px; }
+.lessons h2 { margin: 0; flex: 0 0 43%; font-size: clamp(46px, 6vw, 76px); }
+.lesson-list { flex: 1; }
+.lesson-item { display: flex; align-items: center; gap: 24px; border-top: 1px solid var(--sand); padding: 23px 0; }
+.lesson-item:last-child { border-bottom: 1px solid var(--sand); }
+.lesson-number { color: var(--blue); font-family: Arial, sans-serif; font-size: 11px; }
+.lesson-item h3 { margin: 0 0 4px; color: var(--navy); font-size: 20px; font-weight: normal; }
+.lesson-item p, .project-card p { margin: 0; color: var(--navy-light); font-family: Arial, sans-serif; font-size: 12px; }
+.lesson-arrow { margin-left: auto; color: var(--blue); font-family: Arial, sans-serif; font-size: 20px; }
+
+@media (max-width: 720px) {
+	.lessons .section-content { display: block; margin-top: 42px; }
+}

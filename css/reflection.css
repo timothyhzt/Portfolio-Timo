@@ -1,0 +1,9 @@
+/* Reflection transition styles. */
+.reflection { padding: 125px 40px; background: var(--navy); color: var(--cream); text-align: center; }
+.reflection .eyebrow { color: var(--blue); }
+blockquote { margin: 30px auto 0; color: var(--cream); font-size: clamp(40px, 6vw, 70px); }
+
+@media (max-width: 720px) {
+	.reflection { padding: 90px 22px; }
+	blockquote { font-size: 42px; }
+}
