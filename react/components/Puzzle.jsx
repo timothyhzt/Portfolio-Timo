@@ -7,10 +7,10 @@
   const pieces = [
     { name: 'About', image: 'puzzle_piece-top left v2.png', target: '#about' },
     { name: 'Lessons', image: 'puzzle_piece-top right v2.png', target: '#lessons' },
-    { name: 'Projects', image: 'puzzle_piece-middle left v2.png', target: '#projects' },
-    { name: 'Contact', image: 'puzzle_piece-middle right v2.png', target: '#footer' },
+    { name: 'Reflection', image: 'puzzle_piece-middle left v2.png', target: '#reflection' },
+    { name: 'Projects', image: 'puzzle_piece-middle right v2.png', target: '#projects' },
     { name: 'Skills', image: 'puzzle_piece-bottom left v2.png', target: '#skills' },
-    { name: 'Reflection', image: 'puzzle_piece-bottom right v2.png', target: '#reflection' }
+    { name: 'Contact', image: 'puzzle_piece-bottom right v2.png', target: '#footer' }
   ];
 
   function Puzzle() {

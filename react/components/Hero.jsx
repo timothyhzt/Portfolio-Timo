@@ -10,7 +10,8 @@
         <img className="hero-portrait" src="img/hero v1 1.png" alt="" />
         <div className="hero-content">
           <h1 id="hero-title">
-            Learning to build<br /><em>with purpose.</em>
+            Trying to connect the pieces of me<br />
+            <em>to uncover the hidden picture within</em>
           </h1>
           <p className="hero-text">
             A growing collection of thoughtful projects, honest reflections,

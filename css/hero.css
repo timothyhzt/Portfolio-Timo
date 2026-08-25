@@ -25,13 +25,13 @@
 .hero-content {
 	position: relative;
 	z-index: 1;
-	max-width: 470px;
+	max-width: 760px;
 	margin-left: clamp(0px, 7vw, 90px);
 }
 .hero h1 {
 	margin: 24px 0 30px;
 	color: var(--beige);
-	font-size: clamp(58px, 8vw, 104px);
+	font-size: clamp(48px, 6vw, 82px);
 	font-weight: normal;
 	letter-spacing: -.055em;
 	line-height: .96;
@@ -57,11 +57,11 @@
 		right: 12px;
 	}
 	.hero-content {
-		max-width: 390px;
+		max-width: 100%;
 		margin-left: 0;
 		text-align: center;
 	}
 	.hero h1 {
-		font-size: 61px;
+		font-size: 32px;
 	}
 }
