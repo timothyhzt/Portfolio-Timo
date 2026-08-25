@@ -1,23 +1,87 @@
 /* Project collection styles. */
-.projects .section-number { margin: 0; }
-.projects .section-content { display: flex; gap: 100px; margin-top: 65px; }
-.projects-heading { display: flex; flex: 0 0 43%; justify-content: space-between; gap: 25px; }
-.projects-heading h2 { margin: 0; font-size: clamp(46px, 6vw, 76px); }
-.projects-heading p { max-width: 145px; margin: 8px 0 0; font-size: 14px; }
-.project-list { display: flex; flex: 1; gap: 15px; }
-.project-card { position: relative; min-height: 285px; flex: 1; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; }
-.project-card-light { background: var(--beige); }
-.project-card-dark { background: var(--navy-light); color: var(--cream); }
-.project-card-accent { background: var(--blue); color: var(--navy); }
-.project-card h3 { margin: 0; font-size: 27px; font-weight: normal; }
-.project-card-dark p { color: var(--beige); }
-.project-icon { align-self: flex-end; font-family: Arial, sans-serif; font-size: 26px; }
-.project-label { color: inherit; opacity: .7; }
+.projects .section-number {
+	margin: 0;
+}
+.projects .section-content {
+	display: flex;
+	gap: 100px;
+	margin-top: 65px;
+}
+.projects-heading {
+	display: flex;
+	flex: 0 0 43%;
+	justify-content: space-between;
+	gap: 25px;
+}
+.projects-heading h2 {
+	margin: 0;
+	font-size: clamp(46px, 6vw, 76px);
+}
+.projects-heading p {
+	max-width: 145px;
+	margin: 8px 0 0;
+	font-size: 14px;
+}
+.project-list {
+	display: flex;
+	flex: 1;
+	gap: 15px;
+}
+.project-card {
+	position: relative;
+	min-height: 285px;
+	flex: 1;
+	padding: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.project-card-light {
+	background: var(--beige);
+}
+.project-card-dark {
+	background: var(--navy-light);
+	color: var(--cream);
+}
+.project-card-accent {
+	background: var(--blue);
+	color: var(--navy);
+}
+.project-card h3 {
+	margin: 0;
+	font-size: 27px;
+	font-weight: normal;
+}
+.project-card-dark p {
+	color: var(--beige);
+}
+.project-icon {
+	align-self: flex-end;
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+}
+.project-label {
+	color: inherit;
+	opacity: .7;
+}
 
 @media (max-width: 720px) {
-	.projects .section-content { display: block; margin-top: 42px; }
-	.projects-heading { display: block; }
-	.projects-heading p { margin-top: 25px; }
-	.project-list { display: flex; flex-direction: column; margin-top: 35px; }
-	.project-card { min-height: 210px; }
+	.projects .section-content {
+		display: block;
+		margin-top: 42px;
+	}
+	.projects-heading {
+		display: block;
+	}
+	.projects-heading p {
+		margin-top: 25px;
+	}
+	.project-list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 35px;
+	}
+	.project-card {
+		min-height: 210px;
+	}
 }

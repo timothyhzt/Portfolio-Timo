@@ -1,10 +1,36 @@
 /* Footer contact styles. */
-.site-footer { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 85px; padding-bottom: 45px; background: var(--navy); color: var(--cream); }
-.site-footer h2 { margin-top: 25px; color: var(--cream); font-size: clamp(48px, 6vw, 76px); }
-.footer-details { text-align: right; }
-.footer-details p { margin: 26px 0 0; color: var(--sand); font-family: Arial, sans-serif; font-size: 11px; line-height: 1.6; }
+.site-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 85px;
+	padding-bottom: 45px;
+	background: var(--navy);
+	color: var(--cream);
+}
+.site-footer h2 {
+	margin-top: 25px;
+	color: var(--cream);
+	font-size: clamp(48px, 6vw, 76px);
+}
+.footer-details {
+	text-align: right;
+}
+.footer-details p {
+	margin: 26px 0 0;
+	color: var(--sand);
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.6;
+}
 
 @media (max-width: 720px) {
-	.site-footer { display: block; padding-top: 65px; }
-	.footer-details { margin-top: 45px; text-align: left; }
+	.site-footer {
+		display: block;
+		padding-top: 65px;
+	}
+	.footer-details {
+		margin-top: 45px;
+		text-align: left;
+	}
 }
