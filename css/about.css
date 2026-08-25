@@ -1,23 +1,23 @@
 /* About section styles. */
 
-.about .section-number {
+.puzzle-nav .section-number {
     margin: 0;
 }
 
-.about .section-content {
+.puzzle-nav .section-content {
     display: flex;
     gap: 70px;
     align-items: center;
     margin-top: 65px;
 }
 
-.about-intro {
+.puzzle-nav .about-intro {
     flex: 1;
     margin-left: clamp(0px, 6vw, 84px);
     order: 2;
 }
 
-.about h2 {
+.puzzle-nav h2 {
     margin: 0;
     font-size: clamp(46px, 6vw, 76px);
 }
@@ -51,7 +51,7 @@
 
 /*  Puzzle*/
 
-.about-puzzle {
+.puzzle-nav .about-puzzle {
     position: relative;
     flex: 0 0 min(36vw, 480px);
     width: min(36vw, 480px);
@@ -178,12 +178,12 @@
 /*Mobile*/
 
 @media (max-width: 720px) {
-    .about .section-content {
+    .puzzle-nav .section-content {
         display: block;
         margin-top: 42px;
     }
 
-    .about-intro {
+    .puzzle-nav .about-intro {
         margin-left: 0;
     }
 
@@ -191,7 +191,7 @@
         margin-top: 35px;
     }
 
-    .about-puzzle {
+    .puzzle-nav .about-puzzle {
         width: min(86vw, 440px);
         margin: 55px auto 0;
     }

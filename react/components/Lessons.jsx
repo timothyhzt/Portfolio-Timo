@@ -1,24 +1,29 @@
 /*
-  Future Lessons component.
+const lessons = [
+  ['HTML & structure', 'Creating clear, meaningful pages.'],
+  ['CSS & visual design', 'Making ideas feel consistent and alive.'],
+  ['Problem solving', 'Learning through experiments and iteration.']
+];
 
-  The lesson items can eventually be created from an array and rendered with
-  JavaScript. For now, this is only a commented reference.
-
-  function Lessons() {
-    return (
-      <section className="lessons page-section section-line" id="lessons">
-        <p className="section-number">02 / Lessons</p>
-        <div className="section-content">
-          <h2>Building my<br /><em>foundation.</em></h2>
-          <div className="lesson-list">
-            <article className="lesson-item">HTML &amp; structure</article>
-            <article className="lesson-item">CSS &amp; visual design</article>
-            <article className="lesson-item">Problem solving</article>
-          </div>
+function Lessons() {
+  return (
+    <section className="lessons page-section section-line" id="lessons" aria-labelledby="lessons-title">
+      <p className="section-number">02 / Lessons</p>
+      <div className="section-content">
+        <h2 id="lessons-title">Building my<br /><em>foundation.</em></h2>
+        <div className="lesson-list">
+          {lessons.map(([title, description], index) => (
+            <article className="lesson-item" key={title}>
+              <span className="lesson-number">0{index + 1}</span>
+              <div><h3>{title}</h3><p>{description}</p></div>
+              <span className="lesson-arrow" aria-hidden="true">↗</span>
+            </article>
+          ))}
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}
 
-  export default Lessons;
+export default Lessons;
 */

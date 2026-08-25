@@ -1,28 +1,24 @@
 /*
-  Future About component.
+import Puzzle from './Puzzle.jsx';
 
-  This file can later hold the introduction text and the puzzle navigation.
-  It is commented out so it does not affect the current HTML assignment.
-
-  import Puzzle from './Puzzle.jsx';
-
-  function About() {
-    return (
-      <section className="about page-section section-line" id="about">
-        <p className="section-number">01 / About me</p>
-        <div className="section-content">
-          <div className="about-intro">
-            <h2>A little about<br /><em>the person behind<br />the code.</em></h2>
-            <div className="section-copy">
-              <p className="lead">Hi, I’m Your Name.</p>
-              <p>This space documents the ideas and skills I am developing.</p>
-            </div>
+function About() {
+  return (
+    <section className="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
+      <p className="section-number">01 / About me</p>
+      <div className="section-content">
+        <div className="about-intro">
+          <h2 id="about-title">A little about<br /><em>the person behind<br />the code.</em></h2>
+          <div className="section-copy">
+            <p className="lead">Hi, I’m Timothy. I’m a student exploring how design, technology, and clear communication can come together on the web.</p>
+            <p>I’m interested in the stories behind a project, the details that make a page feel personal, and the process of learning by making.</p>
+            <a className="text-link" href="#lessons">See what I’m learning <span aria-hidden="true">→</span></a>
           </div>
-          <Puzzle />
         </div>
-      </section>
-    );
-  }
+        <Puzzle />
+      </div>
+    </section>
+  );
+}
 
-  export default About;
+export default About;
 */

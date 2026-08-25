@@ -1,23 +1,31 @@
 /*
-  Future Skills component.
+const skills = [
+  ['HTML', 'Building clear page structure.'],
+  ['CSS', 'Creating thoughtful visual systems.'],
+  ['JavaScript', 'Adding useful interaction.']
+];
 
-  This will eventually display the skills being practiced in the portfolio.
-
-  function Skills() {
-    return (
-      <section className="skills page-section section-line" id="skills">
-        <p className="section-number">04 / Skills</p>
-        <div className="section-content">
-          <h2>Tools I’m<br /><em>learning.</em></h2>
-          <div className="skill-list">
-            <article className="skill-item">HTML</article>
-            <article className="skill-item">CSS</article>
-            <article className="skill-item">JavaScript</article>
-          </div>
+function Skills() {
+  return (
+    <section className="skills page-section section-line" id="skills" aria-labelledby="skills-title">
+      <p className="section-number">05 / Skills</p>
+      <div className="section-content">
+        <div className="skills-heading">
+          <h2 id="skills-title">Tools I’m<br /><em>learning.</em></h2>
+          <p>The skills I’m practicing as I turn ideas into working pages.</p>
         </div>
-      </section>
-    );
-  }
+        <div className="skill-list">
+          {skills.map(([name, description], index) => (
+            <article className="skill-item" key={name}>
+              <span className="skill-number">0{index + 1}</span>
+              <div><h3>{name}</h3><p>{description}</p></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
-  export default Skills;
+export default Skills;
 */

@@ -1,33 +1,31 @@
 /*
-  Future React App component.
+import Header from './Header.jsx';
+import Hero from './Hero.jsx';
+import About from './About.jsx';
+import Lessons from './Lessons.jsx';
+import Reflection from './Reflection.jsx';
+import Projects from './Projects.jsx';
+import Hobbies from './Hobbies.jsx';
+import Skills from './Skills.jsx';
+import Footer from './Footer.jsx';
 
-  This component will eventually replace the page structure in index.html.
-  The current assignment remains fully HTML and CSS because this file is
-  intentionally commented out.
+function App() {
+  return (
+    <>
+      <Header />
+      <main id="top">
+        <Hero />
+        <About />
+        <Lessons />
+        <Reflection />
+        <Projects />
+        <Hobbies />
+        <Skills />
+      </main>
+      <Footer />
+    </>
+  );
+}
 
-  import Header from './Header.jsx';
-  import Hero from './Hero.jsx';
-  import About from './About.jsx';
-  import Lessons from './Lessons.jsx';
-  import Projects from './Projects.jsx';
-  import Skills from './Skills.jsx';
-  import Footer from './Footer.jsx';
-
-  function App() {
-    return (
-      <>
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Lessons />
-          <Projects />
-          <Skills />
-        </main>
-        <Footer />
-      </>
-    );
-  }
-
-  export default App;
+export default App;
 */
