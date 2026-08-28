@@ -7,6 +7,8 @@
 	--cream: #fbf8f1;
 	--sand: #ded1bb;
 	--ink: #20333c;
+	--mist: #e5efec;
+	--pale-blue: #dce9e8;
 	--max-width: 1160px;
 }
 
@@ -59,7 +61,7 @@ h2, blockquote {
 .section-line {
 	border-top: 1px solid var(--sand);
 }
-.eyebrow, .section-number, .project-label {
+.eyebrow, .project-label {
 	color: var(--blue);
 	font-family: Arial, sans-serif;
 	font-size: 11px;

@@ -1,7 +1,8 @@
 /* Personal work styles. */
-.hobbies .section-number {
-	margin: 0;
+.hobbies {
+	background: var(--sand);
 }
+
 .hobbies .section-content {
 	display: flex;
 	gap: 80px;

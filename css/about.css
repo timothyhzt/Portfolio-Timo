@@ -1,7 +1,7 @@
 /* About section styles. */
 
-.puzzle-nav .section-number {
-    margin: 0;
+.puzzle-nav {
+    background: var(--pale-blue);
 }
 
 .puzzle-nav .section-content {

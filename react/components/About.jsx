@@ -4,7 +4,6 @@ import Puzzle from './Puzzle.jsx';
 function About() {
   return (
     <section className="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
-      <p className="section-number">01 / About me</p>
       <div className="section-content">
         <div className="about-intro">
           <h2 id="about-title">A little about<br /><em>the person behind<br />the code.</em></h2>

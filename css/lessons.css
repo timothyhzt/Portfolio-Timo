@@ -1,7 +1,8 @@
 /* Lessons list styles. */
-.lessons .section-number {
-	margin: 0;
+.lessons {
+	background: var(--beige);
 }
+
 .lessons .section-content {
 	display: flex;
 	gap: 100px;

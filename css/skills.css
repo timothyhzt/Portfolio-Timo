@@ -1,7 +1,8 @@
 /* Skills section styles. */
-.skills .section-number {
-	margin: 0;
+.skills {
+	background: var(--cream);
 }
+
 .skills .section-content {
 	display: flex;
 	gap: 100px;

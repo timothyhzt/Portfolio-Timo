@@ -8,7 +8,6 @@ const lessons = [
 function Lessons() {
   return (
     <section className="lessons page-section section-line" id="lessons" aria-labelledby="lessons-title">
-      <p className="section-number">02 / Lessons</p>
       <div className="section-content">
         <h2 id="lessons-title">Building my<br /><em>foundation.</em></h2>
         <div className="lesson-list">

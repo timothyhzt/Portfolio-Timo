@@ -6,7 +6,6 @@ function Hobbies() {
 
   return (
     <section className="hobbies page-section section-line" id="hobbies" aria-labelledby="hobbies-title">
-      <p className="section-number">04 / Hobbies</p>
       <div className="section-content">
         <div className="hobbies-heading">
           <h2 id="hobbies-title">Things I<br /><em>make.</em></h2>

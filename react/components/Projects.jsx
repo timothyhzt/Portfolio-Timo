@@ -2,7 +2,6 @@
 function Projects() {
   return (
     <section className="projects page-section section-line" id="projects" aria-labelledby="projects-title">
-      <p className="section-number">03 / Projects</p>
       <div className="section-content">
         <div className="projects-heading">
           <h2 id="projects-title">Working<br /><em>with others.</em></h2>

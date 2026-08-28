@@ -1,7 +1,8 @@
 /* Project collection styles. */
-.projects .section-number {
-	margin: 0;
+.projects {
+	background: var(--mist);
 }
+
 .projects .section-content {
 	display: flex;
 	gap: 80px;
