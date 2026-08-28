@@ -1,6 +1,6 @@
 /* Skills section styles. */
 .skills {
-	background: var(--cream);
+	background: var(--mist);
 }
 
 .skills .section-content {
@@ -21,35 +21,35 @@
 .skills-heading p {
 	max-width: 145px;
 	margin: 8px 0 0;
+	color: var(--navy-light);
 	font-size: 14px;
 }
 .skill-list {
 	flex: 1;
 }
 .skill-item {
-	display: flex;
-	gap: 28px;
-	align-items: flex-start;
-	padding: 24px 0;
-	border-top: 1px solid var(--sand);
+	position: relative;
+	margin-bottom: 14px;
+	padding: 20px 24px 22px;
+	background: var(--cream);
+	border-left: 4px solid var(--blue);
+	box-shadow: 0 8px 0 rgba(20, 43, 58, .08);
 }
 .skill-item:last-child {
-	border-bottom: 1px solid var(--sand);
+	margin-bottom: 0;
 }
-.skill-number {
-	color: var(--blue);
-	font-family: Arial, sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	letter-spacing: .14em;
+.skill-copy {
+	margin: 0;
 }
 .skill-item h3 {
-	margin: 0 0 5px;
+	margin: 0 0 4px;
+	color: var(--navy);
 	font-size: 27px;
 	font-weight: normal;
 }
 .skill-item p {
 	margin: 0;
+	color: var(--navy-light);
 	font-size: 14px;
 }
 

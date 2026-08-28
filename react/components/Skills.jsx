@@ -14,12 +14,13 @@ function Skills() {
           <p>The skills I’m practicing as I turn ideas into working pages.</p>
         </div>
         <div className="skill-list">
-          {skills.map(([name, description], index) => (
-            <article className="skill-item" key={name}>
-              <span className="skill-number">0{index + 1}</span>
-              <div><h3>{name}</h3><p>{description}</p></div>
-            </article>
-          ))}
+          {skills.map(([name, description]) => {
+            return (
+              <article className="skill-item" key={name}>
+                <div className="skill-copy"><h3>{name}</h3><p>{description}</p></div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -13,10 +13,46 @@
 	color: var(--cream);
 	font-size: clamp(48px, 6vw, 76px);
 }
+.footer-intro {
+	flex: 1 1 55%;
+	max-width: 650px;
+}
+.footer-message {
+	max-width: 420px;
+	margin: 30px 0 0;
+	color: var(--sand);
+	font-size: 18px;
+	line-height: 1.35;
+}
 .footer-details {
 	text-align: right;
 }
-.footer-details p {
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+	margin-top: 34px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+.contact-list a {
+	display: flex;
+	justify-content: flex-end;
+	gap: 18px;
+	color: var(--cream);
+}
+.contact-list a:hover {
+	color: var(--blue);
+}
+.contact-list a span:first-child {
+	min-width: 72px;
+	color: var(--blue);
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+}
+.footer-legal {
 	margin: 26px 0 0;
 	color: var(--sand);
 	font-family: Arial, sans-serif;
@@ -32,5 +68,11 @@
 	.footer-details {
 		margin-top: 45px;
 		text-align: left;
+	}
+	.footer-message {
+		margin-top: 24px;
+	}
+	.contact-list a {
+		justify-content: flex-start;
 	}
 }

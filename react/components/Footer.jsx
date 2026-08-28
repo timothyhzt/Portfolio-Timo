@@ -2,8 +2,23 @@
 function Footer() {
   return (
     <footer className="site-footer" id="footer">
-      <div><p className="eyebrow">Let’s connect</p><h2>More to come<br /><em>soon.</em></h2></div>
-      <div className="footer-details"><a className="button button-light" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a><p>© 2025 Timothy Tu<br />Made while learning on the web.</p></div>
+      <div className="footer-intro">
+        <p className="eyebrow">Let’s connect</p>
+        <h2>More to come<br /><em>soon.</em></h2>
+        <p className="footer-message">Have a question, idea, or project in mind? I’d love to hear from you.</p>
+      </div>
+      <div className="footer-details">
+        <a className="button button-light" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a>
+        <div className="contact-list" aria-label="Contact information">
+          <a href="mailto:hello@example.com"><span>Email</span>hello@example.com</a>
+          <a href="tel:+10000000000"><span>Phone</span>+1 000 000 0000</a>
+          <a href="https://github.com/timothyhzt" target="_blank" rel="noreferrer"><span>GitHub</span>/timothyhzt <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/timothy-tu" target="_blank" rel="noreferrer"><span>LinkedIn</span>/timothy-tu <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/timothyhzt" target="_blank" rel="noreferrer"><span>Instagram</span>@timothyhzt <span aria-hidden="true">↗</span></a>
+          <a href="resume.pdf" target="_blank" rel="noreferrer"><span>Resume</span>View my resume <span aria-hidden="true">↗</span></a>
+        </div>
+        <p className="footer-legal">© 2026 Timothy Tu<br />Made while learning on the web.</p>
+      </div>
     </footer>
   );
 }
