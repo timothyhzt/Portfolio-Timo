@@ -6,27 +6,33 @@
 
 .puzzle-nav .section-content {
     display: flex;
-    flex-direction: column;
-    gap: 70px;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    gap: clamp(18px, 2vw, 36px);
     margin-top: 65px;
+    margin-left: clamp(18px, 2vw, 32px);
 }
 
 .puzzle-nav .about-intro {
-    flex: 1;
-    margin-left: clamp(0px, 6vw, 84px);
-    order: 1;
+    flex: 1 1 auto;
+    max-width: none;
+    margin-left: 0;
+    margin-top: -12px;
+    order: 2;
     width: 100%;
 }
 
 .puzzle-nav h2 {
     margin: 0;
-    font-size: clamp(46px, 6vw, 76px);
+    font-size: clamp(54px, 7vw, 86px);
+    line-height: 0.88;
+    letter-spacing: -0.06em;
 }
 
 .section-copy {
-    max-width: 420px;
-    padding-top: 8px;
+    max-width: 100%;
+    padding-top: 10px;
 }
 
 .section-copy p {
@@ -55,11 +61,12 @@
 
 .puzzle-nav .about-puzzle {
     position: relative;
-    flex: 0 0 min(36vw, 480px);
-    width: min(36vw, 480px);
+    flex: 0 0 min(31vw, 430px);
+    width: min(31vw, 430px);
     aspect-ratio: 600 / 900;
-    margin-left: clamp(20px, 4vw, 56px);
-    order: 2;
+    margin-left: 10px;
+    margin-right: 0;
+    order: 1;
 }
 
 .puzzle-piece {

@@ -1,42 +1,86 @@
 /* Lessons list styles. */
 .lessons {
 	background: var(--beige);
+	max-height: 100vh;
 }
 
 .lessons .section-content {
 	display: flex;
 	flex-direction: column;
-	gap: 100px;
+	gap: 28px;
+	max-height: 100vh;
 	margin-top: 65px;
+	padding-bottom: 18px;
+	box-sizing: border-box;
 }
+
 .lessons-heading {
 	margin: 0;
 	flex: 0 0 43%;
 }
+
 .lessons-heading h2 {
 	margin: 0;
 	font-size: clamp(46px, 6vw, 76px);
 }
+
 .lessons-heading > p {
 	max-width: 260px;
 	margin: 28px 0 0;
 	color: var(--navy-light);
 	font-size: 14px;
 }
+
 .lesson-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
 	flex: 1;
-	width: 100%;
+	max-height: calc(100vh - 220px);
+	min-height: 430px;
 }
+
 .lesson-item {
-	margin-bottom: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 0;
 	padding: 22px 24px 24px;
 	background: var(--cream);
 	border-left: 4px solid var(--blue);
 	box-shadow: 0 8px 0 rgba(20, 43, 58, .08);
+	overflow: hidden;
 }
-.lesson-item:last-child {
-	margin-bottom: 0;
+
+.sunhacks-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+	margin-top: 18px;
+	padding-top: 8px;
 }
+
+.sunhacks-photo {
+	margin: 0;
+	overflow: hidden;
+	border-radius: 12px;
+	background: rgba(20, 43, 58, .05);
+	aspect-ratio: 1.1 / 1;
+}
+
+.sunhacks-photo:first-child {
+	grid-column: 1 / -1;
+	aspect-ratio: 2.8 / 1.5;
+}
+
+.sunhacks-photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
 .lesson-label {
 	color: var(--blue);
 	font-family: Arial, sans-serif;
@@ -45,19 +89,26 @@
 	letter-spacing: .1em;
 	text-transform: uppercase;
 }
+
 .lesson-item h3 {
 	margin: 15px 0 20px;
 	color: var(--navy);
-	font-size: 25px;
+	font-size: clamp(24px, 2.6vw, 34px);
 	font-weight: normal;
+	line-height: 1.1;
 }
+
 .lesson-reflection {
 	display: flex;
-	gap: 28px;
+	flex-direction: column;
+	gap: 22px;
+	margin-top: auto;
 }
+
 .lesson-reflection > div {
 	flex: 1;
 }
+
 .lesson-reflection span {
 	color: var(--navy-light);
 	font-family: Arial, sans-serif;
@@ -66,12 +117,28 @@
 	letter-spacing: .1em;
 	text-transform: uppercase;
 }
+
 .lesson-item p, .project-card p {
 	margin: 0;
 	color: var(--navy-light);
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+	.lessons {
+		max-height: none;
+	}
+
+	.lessons .section-content {
+		max-height: none;
+	}
+
+	.lesson-list {
+		grid-template-columns: 1fr;
+		max-height: none;
+	}
 }
 
 @media (max-width: 720px) {

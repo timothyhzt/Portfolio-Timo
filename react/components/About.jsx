@@ -5,6 +5,7 @@ function About() {
   return (
     <section className="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
       <div className="section-content">
+        <Puzzle />
         <div className="about-intro">
           <h2 id="about-title">A little about<br /><em>the person behind<br />the code.</em></h2>
           <div className="section-copy">
@@ -13,7 +14,6 @@ function About() {
             <a className="text-link" href="#lessons">See what I’m learning <span aria-hidden="true">→</span></a>
           </div>
         </div>
-        <Puzzle />
       </div>
     </section>
   );

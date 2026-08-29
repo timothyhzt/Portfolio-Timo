@@ -34,14 +34,6 @@
     <!-- About section: a short introduction alongside the puzzle navigation. -->
     <section class="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
       <div class="section-content">
-        <div class="about-intro">
-          <h2 id="about-title">A little about<br><em>the person behind<br>the code.</em></h2>
-          <div class="section-copy">
-            <p class="lead">Hi, I’m Timothy. I’m a student exploring how design, technology, and clear communication can come together on the web.</p>
-            <p>I’m interested in the stories behind a project, the details that make a page feel personal, and the process of learning by making.</p>
-            <a class="text-link" href="#lessons">See what I’m learning <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
         <div class="about-puzzle">
           <a class="puzzle-piece puzzle-piece-top-left" data-piece="lessons" data-target="#lessons" href="#lessons" aria-label="Go to Lessons">
             <img src="hero-puzzle-assets/puzzle_piece-top left v2.png" alt="">
@@ -68,6 +60,14 @@
             <span class="puzzle-label">Contact</span>
           </a>
         </div>
+        <div class="about-intro">
+          <h2 id="about-title">A little about<br><em>the person behind<br>the code.</em></h2>
+          <div class="section-copy">
+            <p class="lead">Hi, I’m Timothy. I’m a student exploring how design, technology, and clear communication can come together on the web.</p>
+            <p>I’m interested in the stories behind a project, the details that make a page feel personal, and the process of learning by making.</p>
+            <a class="text-link" href="#lessons">See what I’m learning <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -81,26 +81,35 @@
         <div class="lesson-list">
           <article class="lesson-item">
             <span class="lesson-label">A project that changed direction</span>
-            <h3>High school thesis paper</h3>
+            <h3>Senior Thesis</h3>
             <div class="lesson-reflection">
-              <div><span>What happened</span><p>The research became harder to organize than expected, and my original direction stopped making sense.</p></div>
-              <div><span>What I learned</span><p>Breaking a large task into smaller questions made the work clearer and helped me keep moving.</p></div>
+              <div><span>What happened</span><p>My research topic started broad and became harder to organize as I got deeper into it. The original plan did not match the information I was finding.</p></div>
+              <div><span>What I learned</span><p>Breaking a large question into smaller parts made the work more manageable and helped me stay focused instead of getting stuck in the middle.</p></div>
             </div>
           </article>
           <article class="lesson-item">
-            <span class="lesson-label">An unexpected challenge</span>
-            <h3>When the first idea did not work</h3>
+            <span class="lesson-label">My first hackathon</span>
+            <h3>SUNHacks (First Hackathon)</h3>
             <div class="lesson-reflection">
-              <div><span>What happened</span><p>A first attempt looked different from what I had imagined.</p></div>
-              <div><span>What I learned</span><p>Testing ideas early gives me useful feedback before I spend too much time on them.</p></div>
+              <div><span>What happened</span><p>It was my first time building in a fast-paced team setting, and I had to adapt quickly while learning with others under time pressure.</p></div>
+              <div><span>What I learned</span><p>Collaboration and communication mattered just as much as the code. I learned how to keep moving, ask for help, and turn uncertainty into progress.</p></div>
             </div>
-          </article>
-          <article class="lesson-item">
-            <span class="lesson-label">A lesson I still use</span>
-            <h3>Asking for feedback</h3>
-            <div class="lesson-reflection">
-              <div><span>What happened</span><p>Working alone made it easy to miss problems that someone else noticed quickly.</p></div>
-              <div><span>What I learned</span><p>Feedback is part of the process, not proof that the work has failed.</p></div>
+            <div class="sunhacks-gallery" aria-label="Sunhacks event photos">
+              <figure class="sunhacks-photo">
+                <img src="img/sunhacks photos/sunhacks1.png" alt="Sunhacks team photo with participants standing together">
+              </figure>
+              <figure class="sunhacks-photo">
+                <img src="img/sunhacks photos/Sunhacks2.png" alt="Sunhacks group shot in the event space">
+              </figure>
+              <figure class="sunhacks-photo">
+                <img src="img/sunhacks photos/Sunhacks3.png" alt="Sunhacks table setup and project work">
+              </figure>
+              <figure class="sunhacks-photo">
+                <img src="img/sunhacks photos/Sunhacks4.jpeg" alt="Sunhacks team posing for a photo during the event">
+              </figure>
+              <figure class="sunhacks-photo">
+                <img src="img/sunhacks photos/Sunhacks5.jpeg" alt="Sunhacks collaboration moment after building together">
+              </figure>
             </div>
           </article>
         </div>
@@ -120,23 +129,39 @@
           <h2 id="projects-title">Working<br><em>with others.</em></h2>
           <p>Professional projects begin with listening closely and making space for another person’s voice.</p>
         </div>
-        <div class="project-list">
-          <article class="project-card project-card-collab">
-            <div class="project-art project-art-portfolio">
-              <img src="img/Component 1.png" alt="Portrait framed by a puzzle-piece pattern">
+        <div class="project-list project-grid">
+          <article class="project-card project-card-placeholder project-card-one">
+            <div class="project-art project-art-placeholder project-art-one" aria-label="Project placeholder artwork">
+              <span class="project-asset-tag">Project 01</span>
             </div>
             <div class="project-card-content">
-              <div class="project-card-topline"><span class="project-label">01 / Collaboration</span><span class="project-icon" aria-hidden="true">↗</span></div>
-              <h3>A friend’s<br><em>portfolio.</em></h3>
-              <p>A real brief with another person’s voice at the centre. I shaped the structure and visual direction around who they are.</p>
-              <span class="project-tools">HTML · CSS · Listening</span>
+              <span class="project-label">01 / Collaboration</span>
+              <h3>Portfolio<br><em>concept.</em></h3>
+              <p>A clean, thoughtful layout where projects can share an idea, a mood, and a clear sense of purpose.</p>
             </div>
           </article>
-          <aside class="project-note">
-            <span class="project-label">What connects them</span>
-            <p>My personal experiments help me discover a voice. Collaboration teaches me how to use that voice in service of someone else’s story.</p>
-            <a class="text-link" href="#skills">See the tools I use <span aria-hidden="true">→</span></a>
-          </aside>
+
+          <article class="project-card project-card-placeholder project-card-two">
+            <div class="project-art project-art-placeholder project-art-two" aria-label="Project placeholder artwork">
+              <span class="project-asset-tag">Project 02</span>
+            </div>
+            <div class="project-card-content">
+              <span class="project-label">02 / New idea</span>
+              <h3>Client work<br><em>placeholder.</em></h3>
+              <p>Another project can sit here while I build the visual direction, structure, and copy around the final content.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-card-placeholder project-card-three">
+            <div class="project-art project-art-placeholder project-art-three" aria-label="Current work in progress artwork">
+              <span class="project-asset-tag">In Progress</span>
+            </div>
+            <div class="project-card-content">
+              <span class="project-label">03 / Current work</span>
+              <h3>Work in<br><em>progress.</em></h3>
+              <p>This space is ready for the project I’m actively building, with room for the final title, summary, and visual details later.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -145,18 +170,44 @@
     <section class="hobbies page-section section-line" id="hobbies" aria-labelledby="hobbies-title">
       <div class="section-content">
         <div class="hobbies-heading">
-          <h2 id="hobbies-title">Things I<br><em>make.</em></h2>
-          <p>The creative interests I bring with me when I sit down to build something.</p>
+          <h2 id="hobbies-title">The Other Pieces</h2>
+          <p>These are some things I enjoy doing outside of my professional work.</p>
         </div>
-        <article class="hobby-feature">
-          <div class="hobby-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0RKk7c-sgw8?si=UpJH16gllTGlWQhy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="hobby-copy">
-            <div><span class="project-label">Personal work</span><h3>A music video<br><em>for class.</em></h3></div>
-            <div><p>I turned a feeling into moving images, learning how pacing, mood, and visual choices can tell a story without explaining everything.</p><span class="project-tools">Storytelling · Editing · Visual direction</span></div>
-          </div>
-        </article>
+
+        <div class="hobby-grid">
+          <article class="hobby-card hobby-card-video">
+            <div class="hobby-media hobby-media-video">
+              <iframe src="https://www.youtube.com/embed/0RKk7c-sgw8?si=UpJH16gllTGlWQhy" title="Music video preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="hobby-copy">
+              <span class="project-label">01 / Personal work</span>
+              <h3>A music video<br><em>for class.</em></h3>
+              <p>I turned a feeling into moving images, learning how pacing, mood, and visual choices can tell a story without explaining everything.</p>
+            </div>
+          </article>
+
+          <article class="hobby-card hobby-card-game">
+            <div class="hobby-media hobby-media-game" aria-label="Clash Royale placeholder artwork">
+              <span class="hobby-asset-tag">Clash Royale</span>
+            </div>
+            <div class="hobby-copy">
+              <span class="project-label">02 / Weekend hobby</span>
+              <h3>Clash Royale<br><em>strategy & timing.</em></h3>
+              <p>Quick decisions, smart timing, and adapting when the plan changes are what keep each match interesting.</p>
+            </div>
+          </article>
+
+          <article class="hobby-card hobby-card-tennis">
+            <div class="hobby-media hobby-media-tennis" aria-label="Tennis placeholder artwork">
+              <span class="hobby-asset-tag">Tennis</span>
+            </div>
+            <div class="hobby-copy">
+              <span class="project-label">03 / Active time</span>
+              <h3>Tennis<br><em>focus & movement.</em></h3>
+              <p>Playing tennis keeps me moving, thinking fast, and learning how patience and rhythm can change the whole point of a rally.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -193,14 +244,16 @@
       <p class="footer-message">Have a question, idea, or project in mind? I’d love to hear from you.</p>
     </div>
     <div class="footer-details">
-      <a class="button button-light" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a>
-      <div class="contact-list" aria-label="Contact information">
-        <a href="mailto:hello@example.com"><span>Email</span>hello@example.com</a>
-        <a href="tel:+10000000000"><span>Phone</span>+1 000 000 0000</a>
-        <a href="https://github.com/timothyhzt" target="_blank" rel="noreferrer"><span class="social-icon social-icon--github" aria-hidden="true">GH</span><span class="contact-label"><span>GitHub</span>/timothyhzt <span aria-hidden="true">↗</span></span></a>
-        <a href="https://www.linkedin.com/in/timothy-tu" target="_blank" rel="noreferrer"><span class="social-icon social-icon--linkedin" aria-hidden="true">in</span><span class="contact-label"><span>LinkedIn</span>/timothy-tu <span aria-hidden="true">↗</span></span></a>
-        <a href="https://www.instagram.com/timothyhzt" target="_blank" rel="noreferrer"><span class="social-icon social-icon--instagram" aria-hidden="true">◎</span><span class="contact-label"><span>Instagram</span>@timothyhzt <span aria-hidden="true">↗</span></span></a>
-        <a href="resume.pdf" target="_blank" rel="noreferrer"><span class="social-icon social-icon--resume" aria-hidden="true">CV</span><span class="contact-label"><span>Resume</span>View my resume <span aria-hidden="true">↗</span></span></a>
+      <div class="footer-actions">
+        <a class="button button-light" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a>
+        <div class="contact-list" aria-label="Contact information">
+          <a href="mailto:hello@example.com"><span>Email</span>hello@example.com</a>
+          <a href="tel:+10000000000"><span>Phone</span>+1 000 000 0000</a>
+          <a href="https://github.com/timothyhzt" target="_blank" rel="noreferrer"><span class="social-icon social-icon--github" aria-hidden="true">GH</span><span class="contact-label"><span>GitHub</span>/timothyhzt <span aria-hidden="true">↗</span></span></a>
+          <a href="https://www.linkedin.com/in/timothy-tu" target="_blank" rel="noreferrer"><span class="social-icon social-icon--linkedin" aria-hidden="true">in</span><span class="contact-label"><span>LinkedIn</span>/timothy-tu <span aria-hidden="true">↗</span></span></a>
+          <a href="https://www.instagram.com/timothyhzt" target="_blank" rel="noreferrer"><span class="social-icon social-icon--instagram" aria-hidden="true">◎</span><span class="contact-label"><span>Instagram</span>@timothyhzt <span aria-hidden="true">↗</span></span></a>
+          <a href="resume.pdf" target="_blank" rel="noreferrer"><span class="social-icon social-icon--resume" aria-hidden="true">CV</span><span class="contact-label"><span>Resume</span>View my resume <span aria-hidden="true">↗</span></span></a>
+        </div>
       </div>
       <p class="footer-legal">© 2026 Timothy Tu<br>Made while learning on the web.</p>
     </div>
