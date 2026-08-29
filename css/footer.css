@@ -38,13 +38,19 @@
 .contact-list a {
 	display: flex;
 	justify-content: flex-end;
-	gap: 18px;
+	align-items: center;
+	gap: 12px;
 	color: var(--cream);
 }
 .contact-list a:hover {
 	color: var(--blue);
 }
-.contact-list a span:first-child {
+.contact-list a .contact-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+.contact-list a .contact-label span:first-child {
 	min-width: 72px;
 	color: var(--blue);
 	font-size: 10px;
@@ -52,6 +58,25 @@
 	letter-spacing: .12em;
 	text-transform: uppercase;
 }
+.social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 8px;
+	background: rgba(126, 165, 168, .2);
+	color: var(--cream);
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+.social-icon--github { background: rgba(126, 165, 168, .22); }
+.social-icon--linkedin { background: rgba(92, 150, 180, .26); }
+.social-icon--instagram { background: rgba(214, 155, 125, .28); }
+.social-icon--resume { background: rgba(234, 212, 173, .24); }
 .footer-legal {
 	margin: 26px 0 0;
 	color: var(--sand);

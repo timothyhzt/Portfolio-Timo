@@ -5,14 +5,13 @@
 
 .projects .section-content {
 	display: flex;
+	flex-direction: column;
 	gap: 80px;
 	margin-top: 65px;
 }
 .projects-heading {
-	display: flex;
-	flex: 0 0 31%;
-	justify-content: space-between;
-	gap: 25px;
+	display: block;
+	width: 100%;
 }
 .projects-heading h2 {
 	margin: 0;
@@ -20,13 +19,14 @@
 }
 .projects-heading p {
 	max-width: 175px;
-	margin: 8px 0 0;
+	margin: 25px 0 0;
 	font-size: 14px;
 }
 .project-list {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1;
+	width: 100%;
 	align-items: flex-start;
 	gap: 18px;
 }

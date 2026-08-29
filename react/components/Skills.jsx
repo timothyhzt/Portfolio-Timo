@@ -15,8 +15,12 @@ function Skills() {
         </div>
         <div className="skill-list">
           {skills.map(([name, description]) => {
+            const faviconClass = name === 'HTML' ? 'skill-favicon--html' : name === 'CSS' ? 'skill-favicon--css' : 'skill-favicon--js';
+            const faviconLetter = name === 'HTML' ? 'H' : name === 'CSS' ? 'C' : 'J';
+
             return (
               <article className="skill-item" key={name}>
+                <span className={`skill-favicon ${faviconClass}`} aria-hidden="true">{faviconLetter}</span>
                 <div className="skill-copy"><h3>{name}</h3><p>{description}</p></div>
               </article>
             );

@@ -5,54 +5,87 @@
 
 .lessons .section-content {
 	display: flex;
+	flex-direction: column;
 	gap: 100px;
 	margin-top: 65px;
 }
-.lessons h2 {
+.lessons-heading {
 	margin: 0;
 	flex: 0 0 43%;
+}
+.lessons-heading h2 {
+	margin: 0;
 	font-size: clamp(46px, 6vw, 76px);
+}
+.lessons-heading > p {
+	max-width: 260px;
+	margin: 28px 0 0;
+	color: var(--navy-light);
+	font-size: 14px;
 }
 .lesson-list {
 	flex: 1;
+	width: 100%;
 }
 .lesson-item {
-	display: flex;
-	align-items: center;
-	gap: 24px;
-	border-top: 1px solid var(--sand);
-	padding: 23px 0;
+	margin-bottom: 14px;
+	padding: 22px 24px 24px;
+	background: var(--cream);
+	border-left: 4px solid var(--blue);
+	box-shadow: 0 8px 0 rgba(20, 43, 58, .08);
 }
 .lesson-item:last-child {
-	border-bottom: 1px solid var(--sand);
+	margin-bottom: 0;
 }
-.lesson-number {
+.lesson-label {
 	color: var(--blue);
 	font-family: Arial, sans-serif;
 	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-transform: uppercase;
 }
 .lesson-item h3 {
-	margin: 0 0 4px;
+	margin: 15px 0 20px;
 	color: var(--navy);
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: normal;
+}
+.lesson-reflection {
+	display: flex;
+	gap: 28px;
+}
+.lesson-reflection > div {
+	flex: 1;
+}
+.lesson-reflection span {
+	color: var(--navy-light);
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-transform: uppercase;
 }
 .lesson-item p, .project-card p {
 	margin: 0;
 	color: var(--navy-light);
 	font-family: Arial, sans-serif;
 	font-size: 12px;
-}
-.lesson-arrow {
-	margin-left: auto;
-	color: var(--blue);
-	font-family: Arial, sans-serif;
-	font-size: 20px;
+	line-height: 1.55;
 }
 
 @media (max-width: 720px) {
 	.lessons .section-content {
 		display: block;
 		margin-top: 42px;
+	}
+	.lessons-heading > p {
+		margin-top: 25px;
+	}
+	.lesson-reflection {
+		display: block;
+	}
+	.lesson-reflection > div + div {
+		margin-top: 18px;
 	}
 }

@@ -6,6 +6,7 @@
 
 .puzzle-nav .section-content {
     display: flex;
+    flex-direction: column;
     gap: 70px;
     align-items: center;
     margin-top: 65px;
@@ -14,7 +15,8 @@
 .puzzle-nav .about-intro {
     flex: 1;
     margin-left: clamp(0px, 6vw, 84px);
-    order: 2;
+    order: 1;
+    width: 100%;
 }
 
 .puzzle-nav h2 {
@@ -57,7 +59,7 @@
     width: min(36vw, 480px);
     aspect-ratio: 600 / 900;
     margin-left: clamp(20px, 4vw, 56px);
-    order: 1;
+    order: 2;
 }
 
 .puzzle-piece {
