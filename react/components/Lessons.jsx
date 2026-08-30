@@ -37,6 +37,19 @@ function Lessons() {
                 <div><span>What happened</span><p>{happened}</p></div>
                 <div><span>What I learned</span><p>{learned}</p></div>
               </div>
+
+              {title === 'High school thesis paper' && (
+                <div className="thesis-pdf-wrap">
+                  <div className="thesis-preview" aria-label="Senior Thesis preview">
+                    <div className="thesis-preview-badge">PDF</div>
+                    <div className="thesis-preview-copy">
+                      <strong>Senior Thesis</strong>
+                      <span>Technology the Key to a Virtuous Life</span>
+                    </div>
+                    <a className="thesis-preview-link" href="img/thesis/Senior Thesis - Technology the Key to a Virtuous Life.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
+                  </div>
+                </div>
+              )}
             </article>
           ))}
         </div>

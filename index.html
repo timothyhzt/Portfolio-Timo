@@ -32,7 +32,7 @@
     </section>
 
     <!-- About section: a short introduction alongside the puzzle navigation. -->
-    <section class="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
+    <section class="puzzle-nav page-section" id="about" aria-labelledby="about-title">
       <div class="section-content">
         <div class="about-puzzle">
           <a class="puzzle-piece puzzle-piece-top-left" data-piece="lessons" data-target="#lessons" href="#lessons" aria-label="Go to Lessons">
@@ -86,6 +86,16 @@
               <div><span>What happened</span><p>My research topic started broad and became harder to organize as I got deeper into it. The original plan did not match the information I was finding.</p></div>
               <div><span>What I learned</span><p>Breaking a large question into smaller parts made the work more manageable and helped me stay focused instead of getting stuck in the middle.</p></div>
             </div>
+            <div class="thesis-pdf-wrap">
+              <div class="thesis-preview" aria-label="Senior Thesis preview">
+                <div class="thesis-preview-badge">PDF</div>
+                <div class="thesis-preview-copy">
+                  <strong>Senior Thesis</strong>
+                  <span>Technology the Key to a Virtuous Life</span>
+                </div>
+                <a class="thesis-preview-link" href="img/thesis/Senior Thesis - Technology the Key to a Virtuous Life.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
+              </div>
+            </div>
           </article>
           <article class="lesson-item">
             <span class="lesson-label">My first hackathon</span>
@@ -95,21 +105,27 @@
               <div><span>What I learned</span><p>Collaboration and communication mattered just as much as the code. I learned how to keep moving, ask for help, and turn uncertainty into progress.</p></div>
             </div>
             <div class="sunhacks-gallery" aria-label="Sunhacks event photos">
-              <figure class="sunhacks-photo">
+              <figure class="sunhacks-photo" data-image="img/sunhacks photos/sunhacks1.png" tabindex="0" role="button" aria-label="Open Sunhacks team photo">
                 <img src="img/sunhacks photos/sunhacks1.png" alt="Sunhacks team photo with participants standing together">
               </figure>
-              <figure class="sunhacks-photo">
+              <figure class="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks2.png" tabindex="0" role="button" aria-label="Open Sunhacks group shot">
                 <img src="img/sunhacks photos/Sunhacks2.png" alt="Sunhacks group shot in the event space">
               </figure>
-              <figure class="sunhacks-photo">
+              <figure class="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks3.png" tabindex="0" role="button" aria-label="Open Sunhacks project table photo">
                 <img src="img/sunhacks photos/Sunhacks3.png" alt="Sunhacks table setup and project work">
               </figure>
-              <figure class="sunhacks-photo">
+              <figure class="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks4.jpeg" tabindex="0" role="button" aria-label="Open Sunhacks team portrait">
                 <img src="img/sunhacks photos/Sunhacks4.jpeg" alt="Sunhacks team posing for a photo during the event">
               </figure>
-              <figure class="sunhacks-photo">
+              <figure class="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks5.jpeg" tabindex="0" role="button" aria-label="Open Sunhacks collaboration photo">
                 <img src="img/sunhacks photos/Sunhacks5.jpeg" alt="Sunhacks collaboration moment after building together">
               </figure>
+            </div>
+            <div class="lightbox" aria-hidden="true">
+              <div class="lightbox-content">
+                <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+                <img src="" alt="Expanded Sunhacks photo">
+              </div>
             </div>
           </article>
         </div>
@@ -131,7 +147,8 @@
         </div>
         <div class="project-list project-grid">
           <article class="project-card project-card-placeholder project-card-one">
-            <div class="project-art project-art-placeholder project-art-one" aria-label="Project placeholder artwork">
+            <div class="project-art project-art-one project-video-frame" aria-label="Project video preview">
+              <iframe src="https://www.youtube.com/embed/U3OknA1_Tjw?si=TxY0PvO06o2dW6da" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <span class="project-asset-tag">Project 01</span>
             </div>
             <div class="project-card-content">
@@ -210,6 +227,51 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const galleryPhotos = document.querySelectorAll('.sunhacks-photo');
+      const lightbox = document.querySelector('.lightbox');
+      const lightboxImage = document.querySelector('.lightbox-content img');
+      const closeButton = document.querySelector('.lightbox-close');
+
+      function openLightbox(imageSrc) {
+        lightboxImage.src = imageSrc;
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImage.src = '';
+      }
+
+      galleryPhotos.forEach((photo) => {
+        const imageSrc = photo.dataset.image;
+
+        photo.addEventListener('click', () => openLightbox(imageSrc));
+        photo.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLightbox(imageSrc);
+          }
+        });
+      });
+
+      closeButton.addEventListener('click', closeLightbox);
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+          closeLightbox();
+        }
+      });
+    </script>
 
     <!-- Skills section: this structure can later be rendered from a React data list. -->
     <section class="skills page-section section-line" id="skills" aria-labelledby="skills-title">

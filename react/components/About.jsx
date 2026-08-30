@@ -3,7 +3,7 @@ import Puzzle from './Puzzle.jsx';
 
 function About() {
   return (
-    <section className="puzzle-nav page-section section-line" id="about" aria-labelledby="about-title">
+    <section className="puzzle-nav page-section" id="about" aria-labelledby="about-title">
       <div className="section-content">
         <Puzzle />
         <div className="about-intro">

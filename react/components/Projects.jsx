@@ -9,8 +9,9 @@ function Projects() {
         </div>
         <div className="project-list">
           <article className="project-card project-card-collab">
-            <div className="project-art project-art-portfolio">
-              <img src="img/Component 1.png" alt="Portrait framed by a puzzle-piece pattern" />
+            <div className="project-art project-art-one project-video-frame" aria-label="Project video preview">
+              <iframe src="https://www.youtube.com/embed/U3OknA1_Tjw?si=TxY0PvO06o2dW6da" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <span className="project-asset-tag">Project 01</span>
             </div>
             <div className="project-card-content">
               <div className="project-card-topline"><span className="project-label">01 / Collaboration</span><span className="project-icon" aria-hidden="true">↗</span></div>
