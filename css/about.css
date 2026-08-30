@@ -26,7 +26,7 @@
 .puzzle-nav h2 {
     margin: 0;
     font-size: clamp(54px, 7vw, 86px);
-    line-height: 0.88;
+    line-height: 1.04;
     letter-spacing: -0.06em;
 }
 

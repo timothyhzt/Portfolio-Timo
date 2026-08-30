@@ -10,7 +10,7 @@
 	gap: 28px;
 	max-height: 100vh;
 	margin-top: 65px;
-	padding-bottom: 8px;
+	padding-bottom: 16px;
 	box-sizing: border-box;
 }
 
@@ -81,13 +81,6 @@
 	transform: translateY(-4px);
 }
 
-.project-video-frame .project-asset-tag {
-	position: absolute;
-	left: 18px;
-	bottom: 18px;
-	z-index: 1;
-}
-
 .project-art-placeholder {
 	background: linear-gradient(160deg, rgba(13, 23, 35, 0.15), rgba(13, 23, 35, 0.7)), var(--navy-light);
 }
@@ -131,7 +124,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 16px;
-	padding: 20px 18px 22px;
+	padding: 20px 18px 28px;
 }
 
 .project-card h3 {
