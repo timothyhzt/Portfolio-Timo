@@ -37,6 +37,7 @@
 	flex: 1;
 	max-height: calc(100vh - 220px);
 	min-height: 420px;
+	margin-bottom: 18px;
 }
 
 .project-card {

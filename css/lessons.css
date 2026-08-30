@@ -66,6 +66,7 @@
 	grid-template-columns: repeat(5, minmax(0, 1fr));
 	gap: 6px;
 	margin-top: 10px;
+	margin-bottom: 18px;
 	padding-top: 0;
 	align-items: stretch;
 	max-height: 180px;
@@ -181,7 +182,7 @@
 }
 
 .lesson-item h3 {
-	margin: 15px 0 20px;
+	margin: 15px 0 0;
 	color: var(--navy);
 	font-size: clamp(26px, 2.8vw, 38px);
 	font-weight: normal;
@@ -192,7 +193,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
-	margin-top: auto;
+	margin-top: 0;
 }
 
 .lesson-reflection > div {
@@ -234,18 +235,25 @@
 	flex-direction: column;
 	flex: 1;
 	min-width: 0;
+	justify-content: center;
 }
 
 .thesis-preview-copy strong {
 	color: var(--navy);
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
+	flex: 1;
+	display: flex;
+	align-items: center;
 }
 
 .thesis-preview-copy span {
 	color: var(--navy-light);
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 1.4;
+	flex: 1;
+	display: flex;
+	align-items: center;
 }
 
 .thesis-preview-link {

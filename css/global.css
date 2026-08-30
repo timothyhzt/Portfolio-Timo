@@ -68,72 +68,10 @@ h2, blockquote {
 }
 
 .section-line::before {
-	content: "";
-	position: absolute;
-	top: -30px;
-	left: 38%;
-	transform: translateX(-50%);
-	width: 120px;
-	height: 46px;
-	background: inherit;
-	border: 0;
-	clip-path: polygon(
-		0 100%,
-		0 34%,
-		18% 34%,
-		18% 0,
-		34% 0,
-		34% 34%,
-		66% 34%,
-		66% 0,
-		82% 0,
-		82% 34%,
-		100% 34%,
-		100% 100%
-	);
+	display: none;
 }
 
-.page-section:nth-of-type(2n) .section-line::before {
-	top: -34px;
-	left: calc(62% + 18px);
-	width: 132px;
-	height: 42px;
-	clip-path: polygon(
-		0 100%,
-		0 38%,
-		20% 38%,
-		20% 0,
-		36% 0,
-		36% 38%,
-		64% 38%,
-		64% 0,
-		80% 0,
-		80% 38%,
-		100% 38%,
-		100% 100%
-	);
-}
 
-.page-section:nth-of-type(3n) .section-line::before {
-	top: -26px;
-	left: calc(34% - 16px);
-	width: 112px;
-	height: 50px;
-	clip-path: polygon(
-		0 100%,
-		0 32%,
-		16% 32%,
-		16% 0,
-		32% 0,
-		32% 32%,
-		68% 32%,
-		68% 0,
-		84% 0,
-		84% 32%,
-		100% 32%,
-		100% 100%
-	);
-}
 .eyebrow, .project-label {
 	color: var(--blue);
 	font-family: Arial, sans-serif;
