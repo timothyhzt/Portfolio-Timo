@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: clamp(18px, 2vw, 36px);
-    margin-top: 65px;
+    margin-top: 25px;
     margin-left: clamp(18px, 2vw, 32px);
 }
 
@@ -37,11 +37,12 @@
 
 .section-copy p {
     margin-top: 0;
+    font-size: 18px;
 }
 
 .section-copy .lead {
     margin-bottom: 22px;
-    font-size: 21px;
+    font-size: 28px;
     line-height: 1.35;
 }
 
