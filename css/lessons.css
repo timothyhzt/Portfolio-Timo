@@ -1,21 +1,22 @@
 /* Lessons list styles. */
 .lessons {
 	background: var(--beige);
-	height: 100vh;
-	max-height: 100vh;
-	overflow: hidden;
+	height: auto;
+	min-height: 100vh;
+	max-height: none;
+	overflow: visible;
 }
 
 .lessons .section-content {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	height: 100%;
-	max-height: 100vh;
+	height: auto;
+	max-height: none;
 	margin-top: 65px;
-	padding-bottom: 18px;
+	padding-bottom: 28px;
 	box-sizing: border-box;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .lessons-heading {
@@ -41,10 +42,10 @@
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 18px;
 	flex: 1 1 auto;
-	height: 100%;
-	max-height: calc(100vh - 200px);
+	height: auto;
+	max-height: none;
 	min-height: 0;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .lesson-item {
@@ -286,6 +287,7 @@
 
 @media (max-width: 900px) {
 	.lessons {
+		min-height: 100vh;
 		max-height: none;
 	}
 
@@ -296,6 +298,7 @@
 	.lesson-list {
 		grid-template-columns: 1fr;
 		max-height: none;
+		height: auto;
 	}
 }
 
