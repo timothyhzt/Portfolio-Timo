@@ -15,12 +15,17 @@ function Skills() {
         </div>
         <div className="skill-list">
           {skills.map(([name, description]) => {
-            const faviconClass = name === 'HTML' ? 'skill-favicon--html' : name === 'CSS' ? 'skill-favicon--css' : 'skill-favicon--js';
-            const faviconLetter = name === 'HTML' ? 'H' : name === 'CSS' ? 'C' : 'J';
+            const faviconMap = {
+              HTML: { className: 'skill-favicon--html', label: 'H', ariaLabel: 'HTML skill icon' },
+              CSS: { className: 'skill-favicon--css', label: 'C', ariaLabel: 'CSS skill icon' },
+              JavaScript: { className: 'skill-favicon--js', label: 'JS', ariaLabel: 'JavaScript skill icon' }
+            };
+
+            const favicon = faviconMap[name] ?? { className: 'skill-favicon--js', label: 'JS', ariaLabel: `${name} skill icon` };
 
             return (
               <article className="skill-item" key={name}>
-                <span className={`skill-favicon ${faviconClass}`} aria-hidden="true">{faviconLetter}</span>
+                <span className={`skill-favicon ${favicon.className}`} aria-label={favicon.ariaLabel} role="img">{favicon.label}</span>
                 <div className="skill-copy"><h3>{name}</h3><p>{description}</p></div>
               </article>
             );

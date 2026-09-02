@@ -4,14 +4,14 @@ const lessons = [
     label: 'A project that failed to meet my personal standards',
     title: 'Highschool Senior Thesis',
     happened: 'My research topic was forced and I struggled to accurately support the point I was trying to make. This caused the paper to be slightly confusing ended up lowering the validity of the paper, thus falling short of my expectations for myself. Ultimately, I ended up disappointed in the paper and frustrated with my own performance.',
-    learned: 'I learned that it\'s ok to struggle and that sometimes the work you present won\'t be perfect, but that\'s okay because it\'s part of the learning process. Even more importantly, I understand how my decisions in how I spend my time can directly impact in both beneficial and harmful ways when working towards a goal or project. I am also grateful that I was blessed with the opportunity to learn this key idea early in my development.',
+    learned: 'I learned that it\'s ok to struggle and that sometimes the work you present won\'t be perfect, but that\'s okay because it\'s part of the learning process. Even more importantly, I udnerstand how my decisions in how I spend my time can directly impact in both beneficial and harmful ways when working towards a goal or project. I am also grateful that I was blessed with the opportunity to learn this key idea early in my development.',
     showThesis: true
   },
   {
     label: 'My first hackathon',
     title: 'SunHacks (First Hackathon)',
-    happened: 'It was my first time building an actual project from scratch and I felt lost. I had came up with a brilliant idea for the prompt we decided to tackle which was the Most Impractical Prompt. Yet ideas mean nothing when you haven\'t yet learned how to execute them. The frustration piled as my team struggled to make any progress. Eventually I gave up mid-way through the event. This was not my proudest moment, I had cracked under the pressure. In the end, my team with the help of a mentor made a working basic version of the idea. They gave me a second chance in the morning and we ended up securing the award.',
-    learned: 'This was early into my collegiate journey, and I\'m proud to say that I have learned to not give up. Sounds simple right? And yet, It was probably the most challenging experience of my life so far. Only when faced with helplessness can one truly grow. I am so grateful that my team let me back in, as I was ready to accept that I had given up. It shows not only how important the people you surround yourself with are but how only when you truly struggle can you actually grow as an individual.',
+    happened: 'It was my first time building an actaul project from scratch and I felt lost. I had came up with a brilliant idea for the prompt we deicded to tackle which was the Most Impractical Prompt. Yet ideas mean nothing when you havent yet learned how to execute them. The frustration piled as my team struggled to make any progress. Eventually I gave up mid-way through the event. This was not my proudest moment, I had cracked under the pressure. In the end, my team with the help of a mentor made a working basic version of the idea. They gave me a second chance in the morning and we ended up securing the award.',
+    learned: 'This was early into my collegiate journey, and I\'m proud to say that I have learned to not give up. Sounds simple right? And yet, It was probably the most challenging experience of my life so far. Only when faced with helplessness can one truly grow. I am so grateful that my team let me back in, as I was ready to accept that I had given up. It shows not only how important the people you surround yourself with are but how only when you truly struggle can you actually grow as an indivdual.',
     showPhotos: true
   }
 ];
@@ -22,7 +22,7 @@ function Lessons() {
       <div className="section-content">
         <div className="lessons-heading">
           <h2 id="lessons-title">Learning<br /><em>from the messy pieces.</em></h2>
-          <p>"Forgive yourself for not knowing earlier what only time could teach" - Maya Angelou</p>
+          <p>“Forgive yourself for not knowing earlier what only time could teach” - Maya Angelou</p>
         </div>
         <div className="lesson-list">
           {lessons.map(({ label, title, happened, learned, showThesis, showPhotos }) => (
@@ -42,7 +42,7 @@ function Lessons() {
                       <strong>Senior Thesis</strong>
                       <span>Technology the Key to a Virtuous Life</span>
                     </div>
-                    <a className="thesis-preview-link" href="img/thesis/Senior Thesis - Technology the Key to a Virtuous Life.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
+                    <a className="thesis-preview-link" href="assets/thesis/Senior Thesis - Technology the Key to a Virtuous Life.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
                   </div>
                 </div>
               )}
@@ -50,20 +50,20 @@ function Lessons() {
               {showPhotos && (
                 <>
                   <div className="sunhacks-gallery" aria-label="Sunhacks event photos">
-                    <figure className="sunhacks-photo" data-image="img/sunhacks photos/sunhacks1.png" tabIndex="0" role="button" aria-label="Open Sunhacks team photo">
-                      <img src="img/sunhacks photos/sunhacks1.png" alt="Sunhacks team photo with participants standing together" />
+                    <figure className="sunhacks-photo" data-image="assets/sunhacks photos/sunhacks1.png" tabIndex="0" role="button" aria-label="Open Sunhacks team photo">
+                      <img src="assets/sunhacks photos/sunhacks1.png" alt="Sunhacks team photo with participants standing together" />
                     </figure>
-                    <figure className="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks2.png" tabIndex="0" role="button" aria-label="Open Sunhacks group shot">
-                      <img src="img/sunhacks photos/Sunhacks2.png" alt="Sunhacks group shot in the event space" />
+                    <figure className="sunhacks-photo" data-image="assets/sunhacks photos/Sunhacks2.png" tabIndex="0" role="button" aria-label="Open Sunhacks group shot">
+                      <img src="assets/sunhacks photos/Sunhacks2.png" alt="Sunhacks group shot in the event space" />
                     </figure>
-                    <figure className="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks3.png" tabIndex="0" role="button" aria-label="Open Sunhacks project table photo">
-                      <img src="img/sunhacks photos/Sunhacks3.png" alt="Sunhacks table setup and project work" />
+                    <figure className="sunhacks-photo" data-image="assets/sunhacks photos/Sunhacks3.png" tabIndex="0" role="button" aria-label="Open Sunhacks project table photo">
+                      <img src="assets/sunhacks photos/Sunhacks3.png" alt="Sunhacks table setup and project work" />
                     </figure>
-                    <figure className="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks4.jpeg" tabIndex="0" role="button" aria-label="Open Sunhacks team portrait">
-                      <img src="img/sunhacks photos/Sunhacks4.jpeg" alt="Sunhacks team posing for a photo during the event" />
+                    <figure className="sunhacks-photo" data-image="assets/sunhacks photos/Sunhacks4.jpeg" tabIndex="0" role="button" aria-label="Open Sunhacks team portrait">
+                      <img src="assets/sunhacks photos/Sunhacks4.jpeg" alt="Sunhacks team posing for a photo during the event" />
                     </figure>
-                    <figure className="sunhacks-photo" data-image="img/sunhacks photos/Sunhacks5.jpeg" tabIndex="0" role="button" aria-label="Open Sunhacks collaboration photo">
-                      <img src="img/sunhacks photos/Sunhacks5.jpeg" alt="Sunhacks collaboration moment after building together" />
+                    <figure className="sunhacks-photo" data-image="assets/sunhacks photos/Sunhacks5.jpeg" tabIndex="0" role="button" aria-label="Open Sunhacks collaboration photo">
+                      <img src="assets/sunhacks photos/Sunhacks5.jpeg" alt="Sunhacks collaboration moment after building together" />
                     </figure>
                   </div>
                   <div className="lightbox" aria-hidden="true">

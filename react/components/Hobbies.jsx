@@ -9,25 +9,19 @@ function Hobbies() {
     <section className="hobbies page-section section-line" id="hobbies" aria-labelledby="hobbies-title">
       <div className="section-content">
         <div className="hobbies-heading">
-          <h2 id="hobbies-title">The Other Pieces</h2>
+          <h2 id="hobbies-title">Additional Pieces</h2>
           <p>These are some things I enjoy doing outside of my professional work.</p>
         </div>
 
         <div className="hobby-grid">
           <article className="hobby-card hobby-card-video">
             <div className="hobby-media hobby-media-video">
-              <button 
-                className="hobby-video-trigger" 
-                type="button" 
-                onClick={() => setIsVideoOpen(true)}
-              >
-                Watch music video <span aria-hidden="true">↗</span>
-              </button>
+              <iframe src="https://www.youtube.com/embed/0RKk7c-sgw8?si=UpJH16gllTGlWQhy" title="Music video preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <div className="hobby-copy">
               <span className="project-label">01 / Personal work</span>
               <h3>Escape Parody<br /><em>Music Video.</em></h3>
-              <p>I worked with a group of friends to capture the experience we had while abroad in Milan, Italy. Here I worked on my editing skills, storytelling, and visual communication.</p>
+              <p>I worked with a group of friends to capture the experience we had while abroad in Milan, Italy. Here I worked on my editing skills, storytelling, and visual communication. I learned about the process of producing music from one of my friends and truly got to experience what Davinci Resolve had to offer.</p>
             </div>
           </article>
 
@@ -44,8 +38,8 @@ function Hobbies() {
           </article>
 
           <article className="hobby-card hobby-card-tennis">
-            <div className="hobby-media hobby-media-tennis" aria-label="Tennis placeholder artwork">
-              <span className="hobby-asset-tag">Tennis</span>
+            <div className="hobby-media hobby-media-tennis">
+              <img src="assets/Tennis.JPG" alt="Tennis action shot" />
             </div>
             <div className="hobby-copy">
               <span className="project-label">03 / Active time</span>
@@ -55,13 +49,6 @@ function Hobbies() {
           </article>
         </div>
       </div>
-
-      <VideoModal 
-        isOpen={isVideoOpen}
-        onClose={() => setIsVideoOpen(false)}
-        videoTitle="Escape Parody - Music Video"
-        videoUrl="https://www.youtube.com/embed/0RKk7c-sgw8?si=UpJH16gllTGlWQhy"
-      />
     </section>
   );
 }
